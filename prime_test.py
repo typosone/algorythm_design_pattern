@@ -33,5 +33,14 @@ class PrimeTest(unittest.TestCase):
         for n in self.not_prime_numbers:
             self.assertFalse(prime.isPrime(n))
 
+    def test_isPrimer2_true(self):
+        for n in self.prime_numbers:
+            self.assertTrue(prime.isPrime2(n))
+
+    def test_isPrimer2_false(self):
+        for n in self.not_prime_numbers:
+            self.assertFalse(prime.isPrime2(n))
+
+
 if __name__ == '__main__':
     unittest.main()
